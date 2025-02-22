@@ -1,6 +1,5 @@
 // src/components/AgencyCard.tsx
 
-import Link from 'next/link';
 import Image from 'next/image';
 import StarRating from './StarRating';
 

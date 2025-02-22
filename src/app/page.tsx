@@ -9,11 +9,11 @@ import IdealProjectPartner from '@/components/IdealProjectPartner';
 import FeaturedAgenciesSection from '@/components/FeaturedAgenciesSection';
 import SlidingLogos from '@/components/SlidingLogos';
 import ClientTestimonials from '@/components/ClientTestimonials';
-import { Agency } from '../../../backend/src/types/Agency';
+
 
 const Home = () => {
-  const [agencies, setAgencies] = useState<Agency[]>([]);
-  const [filteredAgencies, setFilteredAgencies] = useState<Agency[]>([]);
+  const [agencies, setAgencies] = useState([]);
+  const [filteredAgencies, setFilteredAgencies] = useState([]);
 
   useEffect(() => {
     const fetchAgencies = async () => {

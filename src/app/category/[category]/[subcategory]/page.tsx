@@ -1,11 +1,10 @@
 // src/app/subcategory/[category]/[subCategory]/page.tsx
-
+"use client"
 import React from 'react';
-import { useRouter } from 'next/router';
-
+import { useParams } from 'next/navigation';
+ 
 const SubcategoryPage = () => {
-  const router = useRouter();
-  const { category, subCategory } = router.query;
+  const { category, subCategory } = useParams();
 
   return (
     <div>

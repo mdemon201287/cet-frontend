@@ -24,7 +24,7 @@ export default function BusinessServicesPage() {
   const [filteredAgencies, setFilteredAgencies] = useState<Agency[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
+  console.log('agencies', agencies);
   useEffect(() => {
     const fetchAgencies = async () => {
       try {

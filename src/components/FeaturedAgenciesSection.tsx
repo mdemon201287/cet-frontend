@@ -3,10 +3,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import StarRating from './StarRating'; // Import StarRating component
-import { Agency } from '../../../backend/src/types/Agency'; // Adjust the import path as necessary
 
 interface FeaturedAgenciesSectionProps {
-  agencies: Agency[];
+  agencies: any[];
 }
 
 export default function FeaturedAgenciesSection({ agencies }: FeaturedAgenciesSectionProps) {
